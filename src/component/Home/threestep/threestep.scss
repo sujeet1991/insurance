@@ -1,0 +1,46 @@
+@import "../../../assets/css/color.scss";
+.steps_panel{
+    background:$white_bg;
+    font: normal 24px/34px 'PFEncoreSansPro-Book';
+    
+    text-align: center;
+    display: block;
+    padding: 40px;
+    box-shadow:$shadow;
+    margin-bottom: 40px;
+}
+.steps_list {
+    margin: 40px 0 0;
+    padding: 0;
+}
+.steps_list li {
+    display: inline-block;
+    list-style-type: none;
+    width: 32%;
+    text-align: center;
+    vertical-align: top;
+}
+.step_icons {
+    width: 98px;
+    height: 58px;
+    display: inline-block;
+}
+.step_txt {
+    font: 26px/36px $regularfont;
+    color: #1b1a1a;
+    display: block;
+}
+.step_icons.step1_icon {
+    background: url(./images/step1_icon.jpg) no-repeat 0 0;
+}
+.step_icons.step2_icon {
+    background: url(./images/step2_icon.jpg) no-repeat 0 0;
+}
+.step_icons.step3_icon {
+    background: url(./images/step3_icon.jpg) no-repeat 0 0;
+}
+.step_copy {
+    font: 16px $regularfont;
+    color: #6c7174;
+    display: block;
+}

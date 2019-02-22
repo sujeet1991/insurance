@@ -1,0 +1,12 @@
+<svg id="CTA" xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1541.72,4280.14l5.71,5.46-5.71,6.16s-1.29.84-.36,1.7a1.361,1.361,0,0,0,1.79.35l7.85-8.21-7.85-7.52a1.881,1.881,0,0,0-1.87.43C1540.43,4279.3,1541.72,4280.14,1541.72,4280.14Z" transform="translate(-1529 -4278)"/>
+  <path id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" d="M1529.86,4284.5h16.92a0.869,0.869,0,0,1,.87.86v0.85a0.862,0.862,0,0,1-.87.86h-16.92a0.862,0.862,0,0,1-.87-0.86v-0.85A0.869,0.869,0,0,1,1529.86,4284.5Z" transform="translate(-1529 -4278)"/>
+</svg>

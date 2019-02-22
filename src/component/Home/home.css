@@ -1,0 +1,127 @@
+.steps_heading {
+  font-size: 27px;
+  font-family: "PFHandbookPro-Regular";
+  color: #000000;
+}
+
+.container-full {
+  background: #caaa7c;
+}
+
+.hero_content {
+  margin: 181px 0 100px;
+}
+
+.hero_content .scnd-txt {
+  color: #fff;
+  font-family: "PFHandbookPro-Regular";
+  font-size: 70px;
+  width: 65%;
+  line-height: 70px;
+  margin-top: 29px;
+}
+
+.start_icon {
+  background: url("../../assets/images/arrow.svg") no-repeat 0;
+  display: inline-block;
+  width: 27px;
+  height: 16px;
+  position: absolute;
+  top: 41%;
+  left: 81%;
+}
+
+.btn-primary {
+  background: #C7222A;
+  color: #fff;
+  font-family: "PFHandbookPro-Medium";
+  font-weight: 500;
+  font-size: 26px;
+  padding: 10px 20px;
+  margin-top: 25px;
+  width: 240px;
+  position: relative;
+}
+
+.gray_bg {
+  background: #f5f6f7;
+}
+
+.info_quote_panel {
+  background: #ffffff;
+  font: normal 24px/34px 'PFEncoreSansPro-Book';
+  color: #5f5f5f;
+  text-align: center;
+  display: block;
+  padding: 40px 150px;
+  position: relative;
+  top: -40px;
+  -webkit-box-shadow: 0px 5px 5px #dadada;
+          box-shadow: 0px 5px 5px #dadada;
+}
+
+.health_txt {
+  font-family: "PFHandbookPro-Medium";
+}
+
+.tab .nav-tabs li a {
+  font-family: "PFHandbookPro-Medium";
+  padding: 10px 30px;
+  font-size: 28px;
+  color: #999999;
+  border: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  z-index: 2;
+  position: relative;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.activetabhome {
+  border-bottom: 2px solid #5d65d3 !important;
+  color: #000;
+}
+
+.tabs_list {
+  padding: 40px;
+  -webkit-box-shadow: 0px 5px 5px #dadada;
+          box-shadow: 0px 5px 5px #dadada;
+}
+
+.tabs_list li {
+  list-style-type: none;
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 2%;
+}
+
+.tabs_icon {
+  width: 50px;
+  height: 45px;
+  display: inline-block;
+}
+
+.tabs_heading {
+  font: 24px 'PFHandbookPro-Medium';
+  color: #000;
+}
+
+.tabs_list li .tabs_copy {
+  font: 15px 'PFEncoreSansPro-Book';
+  color: #666666;
+}
+
+.tabs_icon.icon1 {
+  background: url(./images/covered_info_icons.jpg);
+}
+
+.tab_panel .tab-content {
+  background: #fff;
+}
+/*# sourceMappingURL=home.css.map */

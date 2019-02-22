@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'PFHandbookPro-Medium';
+    src: url(../fonts/pfhandbookpro-medium.eot);
+    src: url(../fonts/pfhandbookpro-medium.woff2) format('woff2'), url(../fonts/pfhandbookpro-medium.woff) format('woff'), 
+    url(../fonts/pfhandbookpro-medium.ttf) format('truetype'), url(../fonts/pfhandbookpro-medium.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFEncoreSansPro-Book';
+    src: url(../fonts/pfencoresanspro-book.eot);
+    src: url(../fonts/pfencoresanspro-book.woff2) format('woff2'), url(../fonts/pfencoresanspro-book.woff) format('woff'), 
+    url(../fonts/pfencoresanspro-book.ttf) format('truetype'), url(../fonts/pfencoresanspro-book.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PFEncoreSansPro-Medium';
+    src: url(../fonts/pfencoresanspro-medium.eot);
+    src: url(../fonts/pfencoresanspro-medium.woff2) format('woff2'), url(../fonts/pfencoresanspro-medium.woff) format('woff'), 
+    url(../fonts/pfencoresanspro-medium.ttf) format('truetype'), url(../fonts/pfencoresanspro-medium.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a:focus{outline:0;text-decoration:none;}
+
+.gray_bg { background: #f5f6f7 }
+
+.tab .nav-tabs{border-bottom:1px solid #f0f1f2 !important;}
+.tab .nav-tabs{border:none;margin:0;}
+.tab .nav-tabs li.active a{border:none;color:#000;}
+.nav-tabs>li.active>a{color:#c7222a;cursor:default;background-color:#fff;}
+.tab .nav-tabs li a:before{content:"";width:100%;height:1px;border-radius:2px;position:absolute;bottom:0;left:0;}
+.tab .nav-tabs li a:after{content:"";width:0;height:3px;background:#5d65d3;border-radius:2px;position:absolute;bottom:0;left:0;opacity:0;z-index:1;}
+.tab .nav-tabs li a{font-family:"PFHandbookPro-Medium"; padding: 10px 30px; font-size: 28px;color:#999999;border:none;border-radius:0;background:transparent;z-index:2;position:relative;font-weight:normal;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:normal;}
+.tab .nav-tabs li a:hover{color:#151515 !important;}
+ .tab .nav-tabs li a:hover, .tab .nav-tabs li a:focus{border:none;outline:none; background: none}
+ .tab .nav-tabs a:after,.tab .nav-tabs li.active a:after{width:100%;opacity:1;}
+.hero-a-banner{background:#caaa7c url(../images/banner.png) no-repeat center;background-attachment:fixed;}
+.pad-0{padding:0 }
+
+/*****radio check box****/
+.container-new {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom:0px;
+    padding-top:3px;
+    cursor: pointer;
+    font-family:  'PFEncoreSansPro-Book';
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7c8185;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container-new input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 2px #cdcece;
+}
+.checkmark:focus {
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0 #cdcece;
+    background-color: #ffffff;
+    border: solid 2px #cdcece;
+    outline: none;
+}
+.container-new input:checked ~ .checkmark {
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0 #cdcece;
+    background-color: #ffffff;
+    border: solid 2px #cdcece;
+    outline: none;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container-new input:checked ~ .checkmark:after {
+    display: block;
+}
+.container-new .checkmark:after {
+    left:7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #c7222a;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/********************** Radio Buttons **********************/
+.container1 {
+   font-family: "PFHandbookPro-Regular";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom:0px;
+    padding-top:0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 2px #cdcece;    
+}
+.container1 input:checked ~ .checkmark1 {
+    background-color: #ffffff;
+    border: solid 2px #cdcece;
+    box-shadow: 0 0 6px 0 #cdcece;
+    background-color: #ffffff;
+}
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container1 input:checked ~ .checkmark1:after {
+    display: block;
+}
+.container1 .checkmark1:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0072bc;
+}
+
+/***select dropdown*****/
+.error {
+    border: solid 1px #bd2b2b !important;
+    background: #bd2b2b1f !important;
+}
+.glyphi-drop-down-style {
+    top: 4px;
+    font-size: 13px;
+}
+.btn-drop-down-width {
+    width: 100%;
+    text-align: left;
+    height: 44px;
+    border: 1px solid #ccc;
+    padding: 9px;
+}
+.btn-drop-down-width:hover, .btn-drop-down-width:focus {
+    color: #333;
+    background-color: #ffffff;
+}
+.dropdown-menu-width {
+    min-width: 100%;
+    padding: 0px 0px;
+    top: auto;
+    position: inherit;
+}
+.dropdown-menu-item {
+    font-family: "PFHandbookPro-Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding: 8px 20px !important;
+    border-bottom: 1px solid #efefef;
+}
+.error-lbl {
+    font-family: "PFEncoreSansPro-Book";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #bd2b2b;
+}
+.dropdown-placeholder-txt {
+    font-family: 'PFHandbookPro-Regular';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.pad-l-r-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}                                                
+                                                            
+
+
+/****banner css********/
+.hero-a-banner .hero_content{margin:181px 0 100px;}
+ .hero-a-banner .hero_content .scnd-txt{color:#fff;font-family:'PFHandbookPro-Regular';font-size:70px;width:65%;
+ line-height:70px;margin-top:29px}
+.hero-a-banner .btn-primary{background:#C7222A;color:#fff;font-family:'PFHandbookPro-Medium';font-weight:500;font-size:26px;
+padding:10px 20px;margin-top:25px;width:240px;position:relative;}
+.hero-a-banner a.btn-primary:hover{text-decoration:none;}
+.mfland_page{margin-top:-60px!important }
+.mfland_page .row{width:initial;margin:0 -15px;padding:inherit;}
+.patch-overlay, .steps_main.main_zipsip_container.radianbgtop{display:none;}
+.row-flex{display:flex;}
+.section_container{max-width:1270px;width:100%;margin:0 auto;}
+.section_first{margin-bottom:59px }
+.marg-top{margin-top:-50px }
+.col-first{background:#f7a502;xwidth:30%;padding:63px 32px 64px;}
+.explorelist li{padding:88px 20px 64px;margin:0 10px;list-style-type:none;}
+.explorelist li:first-child{}
+.invest_txt{font-size:55px;font-family:'PFHandbookPro-Bold';color:#000;line-height:57px }
+.invest_sub_txt{font-size:24px;font-family:'PFEncoreSansPro-Regular';margin-top:30px }
+.explore_txt{font-family:'PFHandbookPro-Bold';color:#FFF;font-size:26px;position:absolute;top:-42px;left:15px;}
+.invest_icon{width:183px;background:url(../images/helpme_icon.svg) no-repeat center center;height:113px;margin:0 auto;}
+.sol_icon{width:183px;background:url(../images/sol_icon.svg) no-repeat center center;height:113px;margin:0 auto;}
+.col-second{background:#fff;padding:84px 27px 0;text-align:center;height:100%;transition:.5s ease all}
+ .col-second:hover{box-shadow:3px 3px 8px #d6d6d6;}
+.col-second figcaption{margin:30px 0 }
+ .link-btn{background:url(../images/arrowoutline.svg) no-repeat 0 0;width:46px;height:46px;display:inline-block;}
+.link-btn:hover{background:url(../images/arrowfilled.svg) no-repeat 0 0;}
+.col-second .heading_h2{display:block;font-family:'PFHandbookPro-Bold';font-size:38px;color:#000}
+.col-second a:hover{text-decoration:none;}
+.col-copy{font:16px 'PFEncoreSansPro-Regular';color:#666666 }
+.start_icon {background: url(../images/arrow.svg) no-repeat 0; display: inline-block; width: 27px; height: 16px; position: absolute; top: 41%; left: 81%;}
+
+/****/
+.info_quote_panel { background: #fff; font: normal 24px/34px 'PFEncoreSansPro-Book'; color: #5f5f5f; text-align: center;
+ display: block; padding: 40px 150px; position: relative; top: -40px; box-shadow: 0px 5px 5px #dadada;  }
+ .health_txt { font-family: 'PFEncoreSansPro-Medium';}
+
+ .steps_panel { background: #fff; font: normal 24px/34px 'PFEncoreSansPro-Book'; color: #5f5f5f; text-align: center;
+ display: block; padding: 40px;   box-shadow: 0px 5px 5px #dadada; margin-bottom: 40px}
+ .steps_heading { font-size: 27px; font-family: 'PFHandbookPro-Regular'; color: #000 }
+ .step_txt { font: 26px/36px  'PFHandbookPro-Regular'; color: #1b1a1a; display: block;}
+.step_copy { font: 16px 'PFEncoreSansPro-Regular'; color: #6c7174;display: block; }
+.steps_list { margin: 40px 0 0; padding: 0;}
+.steps_list li { display: inline-block; list-style-type: none; width: 32%; text-align: center; vertical-align: top;}
+.step_icons { width: 98px; height: 58px; display: inline-block; }
+.step_icons.step1_icon { background: url(../images/step1_icon.jpg) no-repeat 0 0 }
+.step_icons.step2_icon { background: url(../images/step2_icon.jpg) no-repeat 0 0 }
+.step_icons.step3_icon { background: url(../images/step3_icon.jpg) no-repeat 0 0 }
+.tab_panel .tab-content { background: #fff; }
+
+.tabs_list li {    list-style-type: none; width: 33%; display: inline-block; text-align: center; margin-bottom: 50px; padding: 0 2%;}
+.tabs_list li:nth-child(4), .tabs_list li:nth-child(5), .tabs_list li:nth-child(6) { margin-bottom: 0 }
+.tabs_heading { font: 24px 'PFHandbookPro-Medium'; color: #000;}
+.tabs_icon { width: 50px; height: 45px; display: inline-block;}
+.tabs_icon.icon1 { background: url(../images/covered_info_icons.jpg); }
+.tabs_list { padding: 40px; box-shadow: 0px 5px 5px #dadada }
+.tabs_list li .tabs_copy { font: 15px 'PFEncoreSansPro-Book'; color: #666666; }
+
+@media screen and ( max-width: 900px) {
+    .info_quote_panel { padding: 40px }
+    .hide-in-mobile { display: none; }
+    .hero-a-banner .hero_content { margin: 181px 20px 100px }
+    .hero-a-banner .hero_content .scnd-txt { width: 100% }
+    .steps_panel {padding: 40px 20px}
+    .tabs_list li { width: 49%; padding: 0 2%;}
+}
+@media screen and ( max-width: 767px) {
+    .info_quote_panel { padding: 20px; font-size: 17px; line-height: 22px }
+    .steps_list li { width: 100%; padding: 0 0 60px 0}
+    .steps_list li:last-child {padding: 0 0 0px 0}
+    .tabs_list { padding: 40px 20px }
+    .tab .nav-tabs li a { padding: 10px 17px;font-size: 19px; }
+    .tabs_list li { width: 100% }
+    .hero-a-banner .hero_content .scnd-txt { font-size: 35px; line-height: 35px }
+    .start_icon { top: 35% }
+    .hero-a-banner .btn-primary { padding: 7px 20px; font-size: 24px }
+}
+
+
+/*****steps page******/
+.heading_h3 { font: 34px 'PFHandbookPro-Medium'; color: #3a4e5f; text-align: center;}
+.steps_headers { background: #fff; padding: 10px 0; }
+.abc_logo { background: url(../images/abc_logo.png) no-repeat 0; width: 198px; height: 47px;}
+.steps_progress { background: #fff }
+.steps_progress_list { text-align: center; margin: 0 }
+.steps_progress_list li { padding: 20px 0; font: 22px 'PFHandbookPro-Regular'; color: #666666; list-style-type: none; display: inline-block; width: 33%}
+.steps_progress_list li.active {color: #000;}
+.journey_forms { width: 653px; margin: 0 auto }
+.journey_form_panel { padding: 50px 0 }
+.journey_form_panel .heading_h3 { margin-bottom: 40px }
+.back_icon { background: url(../images/back_icon.jpg) no-repeat 0; width: 22px; height: 18px; float: left;}
+.journey_steps_number { font: 17px 'PFEncoreSansPro-Book'; color: #999999; float: right;}
+.form_panel { background: #fff; border-radius: 4px; width: 100%; border: 1px solid #e3e3e3; padding: 50px 50px;
+margin-top: 10px}
+.btn_default { font-size: 20px; font-family: 'PFHandbookPro-Regular'; padding:10px 15px; position: relative;
+border: 1px solid #cccccc; border-radius: 2px; width: 100%; background: none}
+.blue_btn { background: #0072bc; color: #fff; border-radius: 4px }
+.blue_btn.btn_default { border-color: inherit;  }
+.col_150, .col_60 { width: 150px; display: inline-block; margin-right: 20px;}
+.col_60 { width: 60px }
+.field_row { margin-bottom: 40px }
+.input_field { border: 1px solid #cccccc; border-radius: 2px; font-family: 'PFHandbookPro-Regular'; font-size: 20px; 
+color: #000;  }
+.field_col { display: inline-block; margin-left: 10px; position: relative; }
+.add_txt { color: #424242; font-size: 19px; font-family: 'PFHandbookPro-Regular'; margin: 0}
+.small_txt { font-size: 14px 'PFEncoreSansPro-Book'; color: #878787}
+.btn_default .plus_icon {background: url(../images/black_plus_icon.png) no-repeat 0 0;}
+.blue_btn.btn_default .plus_icon {background: url(../images/plus_icon.png) no-repeat 0 0;}
+.plus_icon { background: url(../images/plus_icon.png) no-repeat 0 0; width: 16px; height: 16px; display: inline-block;
+    left: 15px; position: absolute; top: 16px;}
+.input_field_text { font-size: 19px; font-family: 'PFHandbookPro-Regular'; color: #333;  }
+.btn_default_red { background: #C7222A; color: #fff; font-family: 'PFHandbookPro-Regular'; font-weight: 500; font-size: 24px; 
+padding: 10px 20px; margin-top: 25px; width: 277px; position: relative; 
+border:0; text-align: left; border-radius: 2px; display: inherit; margin: 0 auto}
+
+
+/********signin_panel*********/
+.signin_panel { width: 373px; max-width: 100%; margin: 0 auto; } 
+.signin_panel .field_col { width: 100%; margin-left: 0; margin-bottom: 30px }
+.field_label { font: 19px 'PFHandbookPro-Regular'; color: #424242}
+.signin_panel .btn_default_red { width: 100%; margin-top: 23px }
+.field_col.marg_btm_30 { margin-bottom: 30px }
+.otp_msg { position: absolute; top: 0; right: 0; font: 14px 'PFEncoreSansPro-Book'; color: #999999; top: 3px}
+.signin_terms {color: #666666; font: 12px 'PFEncoreSansPro-Book'; text-align: center; margin-top: 20px}
+
+/******step2*****/
+.amount_list { margin: 24px 0; padding: 0 }
+.amount_list li { display: inline-block; position: relative;margin-right: 25px}
+.amount_list li label { border: 1px solid #cccccc; padding: 9px 15px; font: 20px 'PFHandbookPro-Regular'; color: #333;
+border-radius: 4px}
+.amount_list li label .radio_input { position: absolute; top: 0; opacity: 0 }
+.amount_list li:last-child { margin-right: 0 }
+.select_hosp_opt { display: inline-block; vertical-align: top; width: 170px }
+.checkbox_field { display: inline-block; margin: 8px 10px 0 0; }
+.small_hr {border-bottom: 1px solid #cdcfe5; margin: 40px 0; display: block;}
+.premium_duration { font: 24px 'PFHandbookPro-Medium'; color: #333; display: block; text-align: center; }
+.dur_info { font-size: 14px; font-family: 'PFEncoreSansPro-Book'; color: #666;text-align: center; display: block;}
+.premium_amt {font: 60px 'PFHandbookPro-Medium'; color: #26a000;  display: block;text-align: center;}
+.rupee_icon { position: relative; bottom: 4px}
+.popup_txt { color: #0072bc; display: block; font: 16px 'PFEncoreSansPro-Book'; text-decoration: underline;  }
+.marg-tb-20 { margin: 40px 0 20px; }
+.details .form-group { margin-bottom: 40px }
+.details .input_field { padding: 10px  }
+.form_lebel { font-family: 'PFHandbookPro-Regular'; font-size: 24px; margin: 0 15px 15px; color: #000 }
